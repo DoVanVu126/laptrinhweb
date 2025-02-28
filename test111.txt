@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 kiet lo
+=======
+kiet lac
+>>>>>>> test_conflict
