@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Bang cuu chuong 2
+=======
+Bang cuu chuong 3
+>>>>>>> bangcuuchuong3
