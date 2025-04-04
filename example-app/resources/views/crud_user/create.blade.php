@@ -15,6 +15,20 @@
                             <span class="text-danger">{{ $errors->first('name') }}</span>
                         @endif
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Like</label>
+                        <input type="text" id="like" class="form-control form-control-lg" name="like" required autofocus>
+                        @if ($errors->has('like'))
+                            <span class="text-danger">{{ $errors->first('like') }}</span>
+                        @endif
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Github</label>
+                        <input type="text" id="github" class="form-control form-control-lg" name="github" required autofocus>
+                        @if ($errors->has('github'))
+                            <span class="text-danger">{{ $errors->first('github') }}</span>
+                        @endif
+                    </div>
                     
                     <div class="mb-3">
                         <label class="form-label fw-bold">Mật khẩu</label>
