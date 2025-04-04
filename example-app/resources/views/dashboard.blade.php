@@ -10,7 +10,7 @@
 <div class="card-header text-center mt-3">
     <a href="#" class="text-dark text-decoration-none mx-2">Home</a> |
     <a href="{{ route('login') }}" class="text-dark text-decoration-none mx-2">Đăng nhập</a> |
-    <a href="{{ route('user.createUser') }}" class="text-dark text-decoration-none fw-bold mx-2">Đăng ký</a>
+    <a href="{{ route('user.createUser') }}" class="text-dark text-decoration-none mx-2">Đăng ký</a>
 </div>
 @yield('content')
 </body>
