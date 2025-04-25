@@ -39,5 +39,6 @@ Route::get('/', function () {
 
 Route::get('/users/role/{role}', [CrudUserController::class, 'filterByRole'])->name('users.byRole');
 
+Route::get('/user/{id}/orders', [CrudUserController::class, 'orders'])->name('user.orders');
 
 

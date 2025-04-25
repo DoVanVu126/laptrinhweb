@@ -16,6 +16,7 @@
                     <th>#</th>
                     <th>Username</th>
                     <th>Email</th>
+                    <th>Order</th>
                     <th>Role</th>
                     <th>Thao tác</th>
                 </tr>
@@ -26,6 +27,10 @@
                         <td>{{ $index + 1 }}</td>
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
+                        <td><a href="{{ route('user.orders', ['id' => $user->id]) }}" class="badge bg-secondary text-decoration-none text-white">
+    {{ $user->orders->count() }}
+</a>
+</td>
                         <td>
                             @foreach($user->roles as $role)
                                 <span class="badge bg-primary">
@@ -34,6 +39,8 @@
                                 </span>
                             @endforeach
                         </td>
+                        
+
                         <td>
                             <a href="{{ route('user.updateUser', ['id' => $user->id]) }}" class="text-dark">Edit</a> |
                             <a href="{{ route('user.readUser', ['id' => $user->id]) }}" class="text-dark">View</a> |

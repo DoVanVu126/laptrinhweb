@@ -166,4 +166,9 @@ class CrudUserController extends Controller
 
         return Redirect('login');
     }
+    public function orders($id)
+{
+    $user = User::with('orders.products')->findOrFail($id); // eager load orders và products
+    return view('crud_user.user_orders', compact('user'));
+}
 }

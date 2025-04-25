@@ -20,12 +20,12 @@ class UserSeeder extends Seeder
         for($i = 1; $i <= 100; $i++) {
             DB::table('users')->insert([
                 [
-                    'name' => Str::random(10),
+                    'name' => 'User'.$i,
                     'email' => 'user' .$i. '@gmail.com',
                     'email_verified_at' => now(),
                     'password' => Hash::make('123456'),
                     'like' => 'computer',
-                    'github' => Str::random(10),
+                    'github' => 'github'.$i,
                     'remember_token' => Str::random(10),
                     'created_at' => now(),
                     'updated_at' => now(),
